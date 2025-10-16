@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nazmi’s Words</title>  <!-- Google Fonts: elegant + handwriting -->  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">  <style>
+    :root{
+      --bg1: #FFF6F2; /* soft peach */
+      --bg2: #FFF9F6; /* lighter */
+      --accent: #EBAFB1; /* muted rose */
+      --muted: #6B5B54;
+      --card: rgba(255,255,255,0.7);
+      --glass: rgba(255,255,255,0.65);
+      --shadow: 0 6px 20px rgba(107,91,84,0.08);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:var(--muted);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+    }
+
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.6));
+      border-bottom: 1px solid rgba(235,175,177,0.25);
+      padding:18px 24px;
+      display:flex; align-items:center; justify-content:space-between;
+      box-shadow: var(--shadow);
+    }
+
+    .brand{
+      display:flex; gap:14px; align-items:center;
+    }
+    .logo{
+      width:52px; height:52px; border-radius:12px; background:linear-gradient(135deg,#FFEFEF,#FFF1F0); display:flex; align-items:center; justify-content:center; font-family:'Dancing Script', cursive; font-size:22px; color:#B35D64; box-shadow:0 4px 14px rgba(179,93,100,0.08);
+    }
+    h1{margin:0; font-size:20px; letter-spacing:0.4px; color:#8B4F54}
+    p.site-desc{margin:0; font-size:12px; color:rgba(107,91,84,0.75)}
+
+    .container{
+      max-width:780px; margin:28px auto; padding:0 18px 120px; 
+    }
+
+    .intro{
+      background: var(--glass);
+      border-radius:16px; padding:20px 22px; box-shadow:var(--shadow);
+      margin-bottom:18px; border:1px solid rgba(235,175,177,0.18);
+    }
+    .intro h2{font-family:'Dancing Script',cursive; margin:0; font-size:28px; color:#B04857}
+    .intro p{margin:8px 0 0; color:rgba(107,91,84,0.9)}
+
+    /* Posts */
+    article.post{
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.88));
+      border-radius:14px; padding:22px; margin:18px 0; box-shadow:var(--shadow);
+      border:1px solid rgba(235,175,177,0.12);
+      transition: transform .28s ease, box-shadow .28s ease;
+    }
+    article.post:hover{transform:translateY(-6px); box-shadow:0 16px 40px rgba(107,91,84,0.12)}
+
+    .post-meta{display:flex; gap:12px; align-items:center; margin-bottom:12px}
+    .avatar{width:44px; height:44px; border-radius:10px; background:linear-gradient(135deg,#FFF0EF,#FFECEC); display:flex; align-items:center; justify-content:center; font-family:'Dancing Script',cursive; font-size:18px; color:#B35D64}
+    .meta-text{font-size:13px}
+    .meta-text strong{display:block; font-size:15px; color:#7D3F43}
+
+    .post-title{font-family:'Dancing Script',cursive; font-size:22px; margin:6px 0 8px; color:#8B3D40}
+    .post-content{font-size:16px; color:var(--muted); white-space:pre-wrap}
+
+    /* small utilities */
+    .tags{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+    .tag{font-size:12px; padding:6px 10px; border-radius:999px; background:rgba(235,175,177,0.12); color:#7A4548}
+
+    footer{max-width:780px; margin:36px auto 80px; padding:0 18px; color:rgba(107,91,84,0.7); font-size:13px; text-align:center}
+
+    @media (max-width:640px){
+      header{padding:14px}
+      .container{padding:0 14px}
+      .intro h2{font-size:22px}
+      .post-title{font-size:20px}
+    }
+
+    /* subtle floating heart animation */
+    .heart{position:fixed; right:18px; bottom:18px; width:54px; height:54px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#FFDFE5,#FFEFF0); border-radius:12px; box-shadow:var(--shadow); cursor:default}
+    .heart:before{content:'♥'; font-size:20px; color:#C84B57; font-family:serif}
+
+  </style></head>
+<body><header>
+  <div class="brand">
+    <div class="logo">N</div>
+    <div>
+      <h1>Nazmi’s Words</h1>
+      <p class="site-desc">rumah kecil untuk narasi & puisi—hangat, lembut, dan penuh rasa</p>
+    </div>
+  </div>
+  <nav aria-label="Site navigation">
+    <a href="#about" style="text-decoration:none;color:#8B4F54;font-size:14px">Tentang</a>
+  </nav>
+</header><main class="container">
+  <section class="intro" id="about">
+    <h2>Selamat datang</h2>
+    <p>Setiap tulisan adalah jejak kecil — bisa tentang rindu, cinta, atau langkah yang baru</p>
+  </section>  <!-- POST: Satu Cinta Mampu Mengubah Jalan Hidup -->  <article class="post">
+    <div class="post-meta">
+      <div class="avatar">N</div>
+      <div class="meta-text"><strong>Nazmi</strong><span>Puisi & Narasi • 16 Oktober 2025</span></div>
+    </div>
+    <h3 class="post-title">Satu Cinta Mampu Mengubah Jalan Hidup</h3>
+    <div class="post-content">
+      Kadang, hidup berjalan datar. Hari demi hari terasa sama, tanpa arah yang benar-benar pasti. Lalu, di tengah perjalanan yang sepi itu, satu cinta datang — tak terduga, tapi bermakna. Ia tidak selalu hadir dengan kemewahan, tapi dengan ketulusan yang perlahan menyalakan cahaya di hati yang nyaris padam.Satu cinta mampu membuat seseorang yang dulu takut mencoba, kini berani melangkah lebih jauh. Ia mengubah cara pandang tentang dunia, tentang diri sendiri, dan tentang arti hidup yang sebenarnya. Dari sekadar bertahan, menjadi ingin berjuang. Dari sekadar hidup, menjadi ingin bermakna.
+
+  Kadang, satu cinta tidak datang untuk dimiliki selamanya. Tapi jejaknya tinggal — mengajarkan apa itu sabar, menghargai kehilangan, dan memahami arti bahagia yang sederhana. Dan di sanalah keajaiban terjadi: hidup yang dulu terasa hampa, kini punya arah baru.
+
+  Sebab memang benar, satu cinta… hanya satu saja, bisa cukup untuk mengubah seluruh jalan hidup seseorang.
+</div>
+<div class="tags" aria-hidden>
+  <span class="tag">cinta</span>
+  <span class="tag">narasi</span>
+  <span class="tag">puisi</span>
+</div>
+
+  </article>  <!-- You can duplicate the article block above to add more posts --></main><div class="heart" title="Nazmi’s Words"></div><footer>
+  <small>© Nazmi’s Words · dibuat dengan hangat</small>
+</footer><!-- Optional script: smooth scroll and simple keyboard shortcut to focus compose (for future feature) --><script>
+  // Smooth scroll for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      e.preventDefault(); const id=a.getAttribute('href'); document.querySelector(id)?.scrollIntoView({behavior:'smooth'});
+    })
+  })
+
+  // Example: press 'n' to jump to top (for quick navigation)
+  document.addEventListener('keydown', e=>{
+    if(e.key === 'n' && !e.metaKey && !e.ctrlKey) window.scrollTo({top:0, behavior:'smooth'});
+  })
+</script></body>
+</html>       
